@@ -20,10 +20,17 @@ python app.py
 ### 2. Frontend (HTML + JS)
 
 - Execute o servidor:
-  cd frontend
-  python -m http.server 8000
-  - Abra o arquivo `frontend/index.html` no navegador.
-    ou (http://localhost:8000/index.html)
+
+```bash
+ cd frontend
+```
+
+```bash
+python -m http.server 8000
+```
+
+- Abra o arquivo `frontend/index.html` no navegador.
+  ou (http://localhost:8000/index.html)
 
 ### Banco de dados
 
