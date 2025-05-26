@@ -1,0 +1,174 @@
+/* Fundo com gradiente suave roxo */
+body {
+  background: linear-gradient(135deg, #7b2ff7 0%, #9d50bb 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+/* Container com sombra suave e bordas arredondadas */
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: #ffffffcc; /* branco semi-transparente */
+  padding: 35px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(15px);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+}
+
+/* Cabeçalho */
+h1 {
+  font-weight: 700;
+  color: #a078d1;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(160, 120, 209, 0.5);
+}
+
+/* Ícone no topo */
+.top-icon img {
+  width: 60px;
+  filter: drop-shadow(0 3px 5px rgba(160, 120, 209, 0.5));
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group-text {
+  background-color: #7b2ff7;
+  color: white;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.input-group-text:hover {
+  background-color: #5a23c8;
+  cursor: default;
+}
+
+.form-control {
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 1px solid #7b2ff7;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #5a23c8;
+  box-shadow: 0 0 8px rgba(90, 35, 200, 0.6);
+  outline: none;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #7b2ff7;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #5a23c8;
+  box-shadow: 0 4px 12px rgba(90, 35, 200, 0.6);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Espaçamento e alinhamento dos botões */
+.d-flex.justify-content-end.gap-2 {
+  margin-top: 15px;
+}
+
+/* Tabela */
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+}
+
+table thead th {
+  background-color: #7b2ff7;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(123, 47, 247, 0.25);
+}
+
+table tbody tr {
+  background: white;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+table tbody tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(123, 47, 247, 0.3);
+}
+
+table tbody td {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border: none;
+  color: #333;
+}
+
+table tbody td.text-center {
+  text-align: center;
+}
+
+/* Ícones nas células de ação */
+.btn-action {
+  color: #7b2ff7;
+  font-size: 1.2rem;
+  margin: 0 4px;
+  transition: color 0.3s ease;
+}
+
+.btn-action:hover {
+  color: #5a23c8;
+  cursor: pointer;
+}
+
+/* Alerta - exemplo de mensagem */
+#alertContainer .alert {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 3px 7px rgba(123, 47, 247, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .input-group-text {
+    font-size: 1rem;
+  }
+
+  table thead th,
+  table tbody td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+}
